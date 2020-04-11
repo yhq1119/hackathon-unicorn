@@ -1,10 +1,10 @@
 <template>
   <form action="">
-      <input type="text" placeholder="Name">
-      <input type="email" placeholder="Email">
-      <input type="password" placeholder="Password">
-      <input type="password" placeholder="Repeat">
-      <input type="submit" placeholder="Sign Up">
+      <input type="text" placeholder="Name"><br>
+      <input type="email" placeholder="Email"><br>
+      <input type="password" placeholder="Password"><br>
+      <input type="password" placeholder="Repeat"><br>
+      <input type="submit" placeholder="Sign Up"><br>
       <a href="signin">Have Account? Sign In here.</a>
   </form>
 </template>
