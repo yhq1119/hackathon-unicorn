@@ -2,7 +2,7 @@
 <template>
     <div>
 <GmapMap
-  :center="{lat:-37, lng:144}"
+  :center="{lat: -37.7862363, lng:144.94741779999998}"
   :zoom="7"
   map-type-id="terrain"
   style="width: auto; min-height: 500px"

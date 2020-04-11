@@ -2,15 +2,15 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import vuetify from './plugins/vuetify';
 import * as VueGoogleMaps from 'vue2-google-maps';
-import env from ''
-
+require('dotenv').config() 
 Vue.config.productionTip = false
 
+
+// Vue.use(env)
 Vue.use(VueGoogleMaps, {
   load: {
-    key: process.env.MAP_API_KEY,
+    key: process.env.VUE_APP_MAP_API_KEY,
     libraries: 'places', // This is required if you use the Autocomplete plugin
     // OR: libraries: 'places,drawing'
     // OR: libraries: 'places,drawing,visualization'
@@ -36,6 +36,5 @@ Vue.use(VueGoogleMaps, {
 new Vue({
   router,
   store,
-  vuetify,
   render: h => h(App)
 }).$mount('#app')

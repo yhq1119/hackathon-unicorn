@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Signin from '../views/Signin'
+import Landing from '../views/Landing'
 import MapPage from '../views/MapPage'
 import MainPage from '../views/MainPage'
+import SignupForm from '../components/SignupForm'
+import SigninForm from '../components/SigninForm'
 import BrowseNeeder from '../views/BrowseNeeder'
+
 
 
 Vue.use(VueRouter)
@@ -11,8 +14,16 @@ Vue.use(VueRouter)
   const routes = [
  {
   path:'/',
+  name: 'Landing',
+  component: Landing 
+ },{
+  path:'/signup',
+  name: 'Sign Up',
+  component: SignupForm 
+ },{
+  path:'/signin',
   name: 'Sign In',
-  component: Signin 
+  component: SigninForm 
  }, {
   path:'/main',
   name: 'Main Page',
